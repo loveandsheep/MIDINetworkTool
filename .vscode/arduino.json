@@ -2,4 +2,4 @@
     "board": "arduino:avr:uno",
     "port": "COM9",
     "sketch": "MIDINetworkTool.ino"
-}1
+}

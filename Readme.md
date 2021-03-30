@@ -1,4 +1,4 @@
-#MIDI Thruout tool
+# MIDI Thruout tool
 
 ### 概要
 #### MIDI送信プロトコル

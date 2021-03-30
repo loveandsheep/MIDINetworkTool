@@ -1,6 +1,4 @@
 #include <ArduinoOSC.h>
-#include <SoftwareSerial.h>
-#include <MsTimer2.h>
 #include <MIDI.h>
 #include <EEPROM.h>
 
@@ -10,8 +8,6 @@
 #define PIN_POT_A1 1
 
 static const uint16_t DEBOUNCE_COUNT = 50;
-SoftwareSerial SoftSerial(8, 9);
-// MIDI_CREATE_INSTANCE(SoftwareSerial, SoftSerial, MIDI);
 MIDI_CREATE_INSTANCE(HardwareSerial, Serial, MIDI);
 
 //==================================初期設定項目
@@ -118,9 +114,9 @@ void loop()
   if(digitalRead(PIN_RAW_INPUT) == LOW)
   {
     byte input;
-    if(SoftSerial.available() != 0)
+    if(Serial.available() != 0)
     {
-      input = SoftSerial.read();
+      input = Serial.read();
     
       if(input & 0x80)
       {

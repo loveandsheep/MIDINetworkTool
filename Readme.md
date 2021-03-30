@@ -24,6 +24,10 @@
 | 受信ポート番号     | 12400             |
 | MACアドレス        | C0:FF:EE:01:C0:1C | 
 
+### 依存ライブラリ
+- [FortySevenEffects/arduino_midi_library](https://github.com/FortySevenEffects/arduino_midi_library)
+- [hideakitai/ArduinoOSC](https://github.com/hideakitai/ArduinoOSC)
+
 ### ユーティリティ
 #### OSCによる設定の書き換え
 * MACアドレス以外の設定項目は、OSC経由で書き換え可能です。
